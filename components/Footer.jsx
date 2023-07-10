@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/Footer.module.css";
-import Link from 'next/link';
+
 
 const Footer = () => {
   return (
@@ -13,12 +13,14 @@ const Footer = () => {
         </div>
         <div className={styles.right}>
           <ul className={styles.ul}>
-          <li><a href="/">Home</a></li>
-          <Link  legacyBehavior href={"/"} > <li><a>Services</a></li></Link>
-          <Link  legacyBehavior href={"/"} > <li><a >Feq Question</a></li></Link>
-          <Link  legacyBehavior href={"/about"} > <li><a >About Us</a></li></Link>
-          </ul>
-      </div>
+           <li><a href="/">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Feq Question</a></li>
+                        <li><a href="/about">About Us</a></li>
+          </ul><ul className={styles.ul}>
+                        
+                    </ul>
+        </div>
       </div>
     </div>
     </div>
