@@ -186,7 +186,7 @@ nav h1 span{
           padding: 17px 3rem;
       }
       .btn{
-          padding-left: 3rem;
+          /* padding-left: 3rem; */
           border: none;
           background: transparent;
       }
@@ -223,6 +223,7 @@ nav h1 span{
   top: 0;
   background: #1f285c;
   opacity: .3;
+  height: 100vh
 }
 .container{
   position: relative;
