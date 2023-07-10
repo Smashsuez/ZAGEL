@@ -21,7 +21,7 @@ const AboutUs = () => {
             <div className={styles.cardContainerTwo}>
                 <div className={styles.SubText}>Zagel will become an important part of the Egypt economic super-structure 
                 and a sustainable wealth-generator for Egypt  citizens by becoming the solution provider of choice for 
-                shipping services to and from the Egypt<br/><br/>
+                shipping services to and from the Egypt<br/><br/>.
                 </div>
             </div> 
         </div>
