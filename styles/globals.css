@@ -309,6 +309,7 @@ nav h1 span{
   }
   .container h1{
       font-size: 2.5rem;
+      height: 100px;
   }
   .container p{
       font-size: 14px;
