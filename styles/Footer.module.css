@@ -69,7 +69,10 @@ font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #1f285c;
 }
-
+.link{
+    text-decoration: none;
+    color: #1f285c;
+}
 .bottom{
     display:flex;
     flex-wrap:wrap;
