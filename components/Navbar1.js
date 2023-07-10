@@ -32,7 +32,7 @@ const Navbar = () =>{
         <>
             <nav className={transitionNavbar ? "navbar active" : "navbar"}>
                 
-                <h1>ZAGEL<span>.</span></h1>
+            <a href="/"><h1>ZAGEL<span>.</span></h1></a>
                 <div className={showMenu ? "menu mobile-menu" : "menu" }>
                     <ul>
                         <li><a href="/">Home</a></li>
