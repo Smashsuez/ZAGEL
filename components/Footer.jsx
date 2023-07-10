@@ -13,10 +13,10 @@ const Footer = () => {
         </div>
         <div className={styles.right}>
           <ul className={styles.ul}>
-           <li><a href="/">Home</a></li>
+           <li><a className={styles.link}  href="/">Home</a></li>
                         <li><a className={styles.link} href="#">Services</a></li>
-                        <li><a href="#">Feq Question</a></li>
-                        <li><a href="/about">About Us</a></li>
+                        <li><a className={styles.link}  href="#">Feq Question</a></li>
+                        <li><a className={styles.link}  href="/about">About Us</a></li>
           </ul>
         </div>
       </div>
