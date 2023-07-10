@@ -31,6 +31,7 @@ const Navbar = () =>{
     return (
         <>
             <nav className={transitionNavbar ? "navbar active" : "navbar"}>
+                
                 <h1>ZAGEL<span>.</span></h1>
                 <div className={showMenu ? "menu mobile-menu" : "menu" }>
                     <ul>
