@@ -16,7 +16,7 @@ const Footer = () => {
           <li><a href="/">Home</a></li>
           <Link  legacyBehavior href={"/"} > <li><a>Services</a></li></Link>
           <Link  legacyBehavior href={"/"} > <li><a >Feq Question</a></li></Link>
-          <Link  legacyBehavior href={"/"} > <li><a >About Us</a></li></Link>
+          <Link  legacyBehavior href={"/about"} > <li><a >About Us</a></li></Link>
           </ul>
       </div>
       </div>
