@@ -66,6 +66,8 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing:2px;
     cursor:pointer;
+    text-decoration: none;
+    color: #1f285c;
 }
 
 .bottom{
