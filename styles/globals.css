@@ -206,7 +206,7 @@ nav h1 span{
   display: flex;
   padding-top: 13rem;
   padding-left: 5rem;
-  background: url('../public/imgs/AboutUs1.jpg');
+  background: url('/imgs/AboutUs1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
