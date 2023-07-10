@@ -23,5 +23,5 @@ const WorkDetail = [
         heading:"Have Your Property",
         info:"A small river named Duden flows by their place and supplies it wiyh the necessary regelialia"
     },
-]
+] 
 export default WorkDetail
