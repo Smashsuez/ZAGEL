@@ -14,9 +14,9 @@ const Footer = () => {
         <div className={styles.right}>
           <ul className={styles.ul}>
           <li><a href="/">Home</a></li>
-          <Link  legacyBehavior href={"/"} > <li><a href="#">Services</a></li></Link>
-          <Link  legacyBehavior href={"/"} > <li><a href="#">Feq Question</a></li></Link>
-          <Link  legacyBehavior href={"/"} > <li><a href="/about">About Us</a></li></Link>
+          <Link  legacyBehavior href={"/"} > <li>Services</li></Link>
+          <Link  legacyBehavior href={"/"} > <li>Feq Question</li></Link>
+          <Link  legacyBehavior href={"/"} > <li> About U</li></Link>
           </ul>
       </div>
       </div>
