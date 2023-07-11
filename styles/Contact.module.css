@@ -59,7 +59,7 @@
     z-index: 999;
     align-items: center;
     justify-content: center;
-    background-image: url(/imgs/AboutUs1.jpg);
+    background-image: url(/imgs/contact2.jpg);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,13 +102,13 @@
     height: 40px;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid red;
+    border: 1px solid #27ae60;
     padding-left: 10px;
   }
   
   .button {
     border: none;
-    background-color:#F15F22;
+    background-color:#27ae60;
     color: white;
     margin: auto;
     padding: 10px 20px;

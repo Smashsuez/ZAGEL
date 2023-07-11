@@ -14,7 +14,8 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link  legacyBehavior href={"/"} > 
-          <Image src="/imgs/[removal.ai]_688263e9-0ee6-4409-9343-98d6d25337bc.png" alt="" width="100" height="100" style={{cursor:"pointer"}}/>
+          {/* <Image src="/imgs/[removal.ai]_688263e9-0ee6-4409-9343-98d6d25337bc.png" alt="" width="100" height="100" style={{cursor:"pointer"}}/> */}
+          <a className="logo">ZAGEL</a>
         </Link>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`}>
           <span className="line-1"></span>
@@ -23,23 +24,9 @@ const Navbar = () => {
         </div>
         <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
           <div className="linkContainer">
-            <div className="side">
-              <div className="item">
-                <p className="itemTitle">Email</p>
-                ZAGEL@gmail.com
-              </div>
-              <div className="item">
-                <p className="itemTitle">Address</p>
-                building no., street, City
-              </div>
-              <div className="item">
-                <p className="itemTitle">Phone</p>
-                01234567890
-              </div>
-            </div>
             
             <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
+              <div className={`linkInner activeLink`}>
                 <Link legacyBehavior href={"/"}>
                   <a>Home</a>
                 </Link>
@@ -52,6 +39,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+            
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
                 <Link legacyBehavior href={"/Services"}>
@@ -59,6 +47,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
                 <Link legacyBehavior href={"/Clients"} >
@@ -66,6 +55,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
                 <Link legacyBehavior href={"/Contact"}>
@@ -73,14 +63,17 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <div className="switchContainer">
-              <span className="btn btn-1">
-                <input type="checkbox" name="" id="switch" />
-                <label htmlFor="switch"></label>
-              </span>
-            </div>
+
+            
+
           </div>
         </div>
+        <div class="switch">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox"/>
+	    <label for="language-toggle"></label>
+	    <span class="on">AR</span>
+	    <span class="off">EN</span>
+  	</div>
       </nav>
     </header>
   );

@@ -1,6 +1,6 @@
 import AboutUs from '@/components/AboutUslatest'
 import Footer from '@/components/Footerlatest'
-import Navbar from '@/components/Navbar1latest'
+import Navbar from '@/components/Navbarlatest'
 import React from 'react'
 
 const about = () => {

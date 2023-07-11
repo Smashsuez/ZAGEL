@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '../styles/Home.module.css'
-// import Navbar from '@/components/Navbarlatest'
-// import Landing from '@/components/Landinglatest'
+import Navbar from '@/components/Navbarlatest'
+//import Landing from '@/components/Landing1latest'
+import Landing from '@/components/Landinglatest'
 import Services from '@/components/Serviceslatest'
 import Feature from '@/components/Featurelatest'
 import List from '@/components/Listlatest'
 // import AboutUs from '@/components/AboutUslatest'
 import Footer from '@/components/Footerlatest'
  import Contact from '@/components/Contactlatest'
-import Navbar from '@/components/Navbar1latest'
 import Home1 from '@/components/Homelatest'
 import { Work } from '@/components/Worklatest'
 import According from '@/components/Accordinglatest'
@@ -29,16 +29,19 @@ export default function Home() {
         
       </Head>
       <Navbar/>
-      <Home1/>
+      <Landing/>
       <Feature/>
-      <List/>
-      <According/>
+      <List/><Contact/><According/>
+      {/* <Home1/>
+      
+      
+       */}
       {/* <Work/> */}
       
       
-      <Contact/>
+      {/*  */}
       {/* <AboutUs/> */}
-      <Footer/>
+       <Footer/> 
     </>
   )
 }

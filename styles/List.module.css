@@ -15,7 +15,7 @@
 .title{
     display: inline-block;
     margin-bottom: 0;
-    color: coral;
+    color: #27ae60;
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -79,6 +79,8 @@
     -webkit-text-decoration: underline aliceblue;
     text-decoration: underline aliceblue;
     box-shadow: 10px 5px 5px black;
+    border-top: 3px solid #27ae60;
+    border-bottom: 3px solid #27ae60;
 }
 .cardContainerTwo:hover,
 .cardContainer:hover{
@@ -102,7 +104,7 @@
 .cardtitle{
     font-size: 1.2rem;
     font-weight:bold;
-    color: coral;
+    color: #27ae60;
     display:flex;
     align-items:center;
     text-align: center;
@@ -136,7 +138,9 @@
     color: #1f285c;
     width: 100%;
     max-width: 200px;
-    height: 0px;
+    height: 2px;
+    background: #1f285c;
+
 }
 
 @media screen and (max-width: 480px){
