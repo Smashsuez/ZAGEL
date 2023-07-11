@@ -478,6 +478,7 @@ h1{
 .left{
   padding-right: 4rem;
   width: 50%;
+  position: relative;
 }
 .left h3{
   font-size: 46px;
@@ -492,17 +493,21 @@ h1{
   border-bottom: 1px solid #e8e8e8;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  position: relative;
 }
+
 .left-content .collapsible{
   cursor: pointer;
   font-size: 15px;
   line-height: 28px;
   color: #727272;
   font-family: "poppins", sans-serif;
+  position: relative;
 }
 .Trigger{
   width: 15px;
-  margin-bottom: 20px;
+  position: absolute;
+  left: -17px;
 }
 .content-show{
   padding-top: 10px;
