@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from "../styles/List.module.css"
 import Card from "../components/Card"
-import Aos from 'aos'
 import Link from 'next/link'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,7 +19,7 @@ const List = () => {
         </div>
         <div className={styles.wrapper} >
         <Link href="/" passHref>
-    <div className={styles.cardContainer} onClick={() => setOpen(true)}>
+    <div className={styles.cardContainer} onClick={() => setOpen(true)} data-aos="fade-right">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faTruck} className={styles.image}  />
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Shipping</h1>
@@ -31,7 +30,7 @@ const List = () => {
     </div> 
     </Link>
     
-    <div className={styles.cardContainerTwo}>
+    <div className={styles.cardContainerTwo} data-aos="fade-right">
         {/* <Image className={styles.image} src={list.img} width="50" height="50" alt=""/> */}
         <FontAwesomeIcon icon={faMotorcycle} className={styles.image}/>
         <h1 className={styles.cardtitle} style={{ textDecoration: 'none' }}>Otlop</h1>
