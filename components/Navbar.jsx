@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Aos from 'aos'
-
+import {signIn} from "next-auth/react"
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -21,7 +20,7 @@ const Navbar = () => {
           <a className="logo">ZAGEL</a>
         </Link>
         <div className="auth">
-          <button className={`in ${allow ? "" : "active"}`}>Sign In</button>
+          <button className={`in ${allow ? "" : "active"}`} onClick={() => signIn}>Sign In</button>
           <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>
         </div>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`} >
