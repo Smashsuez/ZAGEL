@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-//import {signIn} from "next-auth/react"
+import {signIn} from "next-auth/react"
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
