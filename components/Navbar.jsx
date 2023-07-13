@@ -20,7 +20,7 @@ const Navbar = () => {
           <a className="logo">ZAGEL</a>
         </Link>
         <div className="auth">
-          <button className={`in ${allow ? "" : "active"}`} onClick={() => signIn}>Sign In</button>
+          <button className={`in ${allow ? "" : "active"}`}>Sign In</button>
           <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>
         </div>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`} >
