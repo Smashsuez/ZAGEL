@@ -3,6 +3,7 @@ import React, {useEffect} from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { SessionProvider } from "next-auth/react"
+import {signIn, useSession} from "next-auth/react"
 
 export default function App({ Component, pageProps: { session, ...pageProps }}) {
   useEffect(() => {
