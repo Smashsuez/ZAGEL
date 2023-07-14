@@ -6,13 +6,14 @@ import {signIn, useSession} from "next-auth/react"
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [allow, setAllow] = useState(false);
-  const { data :status} = useSession
+  const { data : session, status} = useSession
 
 
   const toggleNavActive = () => {
     setNavActive(!navActive);
   };
 console.log({status})
+console.log({session})
 
 
   return (
