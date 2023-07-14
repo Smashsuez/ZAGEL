@@ -25,7 +25,7 @@ const Navbar = () => {
           <a className="logo">ZAGEL</a>
         </Link>
         <div className="auth">
-          <button onClick={() => logIn()} className={`in ${allow ? "" : "active"}`} >Sign In</button>
+          <button onClick={() => signIn()} className={`in ${allow ? "" : "active"}`} >Sign In</button>
           <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>
         </div>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`} >

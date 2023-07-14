@@ -228,6 +228,7 @@ input.check-toggle-round-flat:checked + label:after {
 .in.active,
 .out.active{
   display: block;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
