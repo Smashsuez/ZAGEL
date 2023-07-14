@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Landing/>
-      {session ? <pre>{JSON.stringify(session, null, 2)}</pre> : "null"}
+      {session && <pre>{JSON.stringify(session, null, 2)}</pre> }
       <Feature/>
       <List/><Contact/><According/>
       {/* <Home1/>
