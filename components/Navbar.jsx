@@ -13,7 +13,7 @@ const Navbar = () => {
     setNavActive(!navActive);
   };
 console.log({status})
-console.log({session})
+console.log(JSON.stringify(session, null, 2) )
 
 
   return (
