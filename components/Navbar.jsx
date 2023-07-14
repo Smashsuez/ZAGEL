@@ -5,7 +5,7 @@ import {signIn, useSession} from "next-auth/react"
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [allow, setAllow] = useState(localStorage.access ? true : false);
+  const [allow, setAllow] = useState(false);
   const { data :status} = useSession
 
 
