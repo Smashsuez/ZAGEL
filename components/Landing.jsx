@@ -3,12 +3,14 @@ import Typewriter from 'typewriter-effect';
 import styles from "../styles/Landing.module.css";
 import Image from 'next/image';
 import Icon from './Icon';
+import {signIn, useSession} from "next-auth/react"
 //import video from '../public/videos/ooo.mp4';
 const Landing = () => {
     const handleScrollTo = (id) => {
         const element = document.getElementById(id);
         element.scrollIntoView({ behavior: "smooth" });
     };
+    const { data : session, status} = useSession
 
     return (
         <>
@@ -24,6 +26,7 @@ const Landing = () => {
                                 }}
                             />
                         </h1>
+                        {session ? <pre>JSON.stringify(session, null, 2)</pre> : null}
                     </div>
                     <div>
                         <p className={styles.description}>
