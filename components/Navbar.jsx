@@ -1,16 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import {signIn} from "next-auth/react"
+import {signIn, useSession} from "next-auth/react"
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [allow, setAllow] = useState(false);
+  const { data :status} = useSession
 
 
   const toggleNavActive = () => {
     setNavActive(!navActive);
   };
+
+  if (status === "authenticated"){
+    setAllow(true)
+  }
 
   return (
     <header>
@@ -20,7 +25,7 @@ const Navbar = () => {
           <a className="logo">ZAGEL</a>
         </Link>
         <div className="auth">
-          <button className={`in ${allow ? "" : "active"}`}>Sign In</button>
+          <button onClick={() => logIn()} className={`in ${allow ? "" : "active"}`} >Sign In</button>
           <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>
         </div>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`} >
