@@ -16,7 +16,6 @@ import { Work } from '@/components/Worklatest'
 import According from '@/components/Accordinglatest'
 import {signIn, useSession} from "next-auth/react"
 const inter = Inter({ subsets: ['latin'] })
-const { data : session, status} = useSession
 
 export default function Home() {
   return (
@@ -33,9 +32,10 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Landing/>
-      {session && <pre>{JSON.stringify(session, null, 2)}</pre> }
       <Feature/>
-      <List/><Contact/><According/>
+      <List/>
+      {/* <Contact/> */}
+      <According/>
       {/* <Home1/>
       
       

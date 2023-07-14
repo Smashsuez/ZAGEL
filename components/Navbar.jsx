@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import {signIn, useSession} from "next-auth/react"
+import {signIn, signOut, useSession} from "next-auth/react"
+import AuthNav from "./AuthNav";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [allow, setAllow] = useState(false);
-  const { data : session, status} = useSession
+  const [user, setUser] = useState(false);
+  
+  const { data : session, status} = useSession()
 
-
+let [allow, setAllow] = useState(status == "authenticated" ? true : false);
   const toggleNavActive = () => {
     setNavActive(!navActive);
   };
-console.log({status})
-const X = JSON.stringify(session, null, 2)
-console.log({X} )
+ console.log({status})
+// const X = JSON.stringify(session, null, 2)
+// console.log({X} )
 
 
   return (
@@ -25,8 +27,7 @@ console.log({X} )
           <a className="logo">ZAGEL</a>
         </Link>
         <div className="auth">
-          <button onClick={() => signIn()} className={`in ${allow ? "" : "active"}`} >Sign In</button>
-          <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>
+          <AuthNav/>
         </div>
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`} >
           <span className="line-1"></span>
