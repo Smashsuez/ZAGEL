@@ -24,6 +24,7 @@ console.log({X} )
           {/* <Image src="/imgs/[removal.ai]_688263e9-0ee6-4409-9343-98d6d25337bc.png" alt="" width="100" height="100" style={{cursor:"pointer"}}/> */}
           <a className="logo">ZAGEL</a>
         </Link>
+        {session ? <pre>JSON.stringify(session, null, 2)</pre> : "null"}
         <div className="auth">
           <button onClick={() => signIn()} className={`in ${allow ? "" : "active"}`} >Sign In</button>
           <button className={`out ${allow ? "active" : ""}`}>Sign Out</button>

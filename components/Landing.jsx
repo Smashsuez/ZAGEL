@@ -26,7 +26,7 @@ const Landing = () => {
                                 }}
                             />
                         </h1>
-                        {session ? <pre>JSON.stringify(session, null, 2)</pre> : "null"}
+                        
                     </div>
                     <div>
                         <p className={styles.description}>
