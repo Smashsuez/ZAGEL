@@ -12,7 +12,7 @@ const Navbar = () => {
   const toggleNavActive = () => {
     setNavActive(!navActive);
   };
-
+console.log({status})
 
 
   return (
