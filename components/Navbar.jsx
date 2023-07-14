@@ -13,7 +13,7 @@ const Navbar = () => {
     setNavActive(!navActive);
   };
 
-  if (status === "authenticated"){
+  if (status == "authenticated"){
     setAllow(true)
   }
 
