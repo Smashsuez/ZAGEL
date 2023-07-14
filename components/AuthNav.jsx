@@ -6,7 +6,7 @@ const { data : session, status} = useSession()
     
    if (session) {return (
     <>
-        <p>Hi {session.user.email}</p>
+        <p>Hi {session.user.name}</p>
           <button  onClick={() => signOut()} className={`out active`}>Sign Out</button>
         </>
   )}
