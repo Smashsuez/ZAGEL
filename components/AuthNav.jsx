@@ -1,18 +1,21 @@
 import React, {useState} from 'react'
 import {signIn, signOut, useSession} from "next-auth/react"
 const AuthNav = () => {
-const { data : session, status} = useSession()
-    let [allow, setAllow] = useState(status == "authenticated" ? true : false);
-    
-   if (session) {return (
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <>
+        Signed in as {session.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button>
+      </>
+    )
+  }
+  return (
     <>
-        <p>Hi {session.user.name}</p>
-          <button  onClick={() => signOut()} className={`out active`}>Sign Out</button>
-        </>
-  )}
-  else {return (
-    <button onClick={() => signIn()} className={`in active`} >Sign In</button>
-  )}
+      Not signed in <br />
+      <button onClick={() => signIn()}>Sign in</button>
+    </>
+  )
 }
 
 export default AuthNav

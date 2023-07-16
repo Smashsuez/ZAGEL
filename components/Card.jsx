@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 
-const Card = ({list}) => {
+const Card = () => {
     return (
     <>
     <Link href="/" passHref>

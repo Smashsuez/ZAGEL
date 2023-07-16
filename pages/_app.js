@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import { SessionProvider } from "next-auth/react"
 import {signIn, useSession} from "next-auth/react"
 
-export default function App({ Component, pageProps,session}) {
+export default function App({ Component, pageProps: {session, ...pageProps}}) {
   useEffect(() => {
 		AOS.init({
 			delay: 400,
@@ -15,7 +15,9 @@ export default function App({ Component, pageProps,session}) {
   useEffect(() => {
     AOS.refresh()
   }, [])
-  return (<SessionProvider session={session}>
+   return (
+  <SessionProvider session={session}>
   <Component {...pageProps}/>
 </SessionProvider>)
+
 }
