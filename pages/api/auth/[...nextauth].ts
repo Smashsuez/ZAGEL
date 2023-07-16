@@ -20,5 +20,11 @@ export default NextAuth ({
   // },
   adapter: MongoDBAdapter(clientPromise),
   debug: process.env.NODE_ENV === "development",
+  session: {
+    strategy: "jwt",
+  },
+  jwt: {
+    secret: process.env.JTW_SECRET,
+  },
 })
 
