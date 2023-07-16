@@ -15,9 +15,9 @@ export default NextAuth ({
     }),
     // ...add more providers here
   ],
-  pages: {
-    signIn: "/auth",
-  },
+  // pages: {
+  //   signIn: "/auth",
+  // },
   adapter: MongoDBAdapter(clientPromise),
   debug: process.env.NODE_ENV === "development",
 })
